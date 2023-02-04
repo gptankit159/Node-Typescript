@@ -1,0 +1,13 @@
+npm i -D @types/node
+
+Configure Default build task in VScode
+shift + ctrl + b
+
+npm i pm2 -D
+
+add  "scripts": {
+    "dev": "pm2-dev app.js"
+  }
+  npm run dev
+
+add npm run dev to tasks.config in .vscode (Optional)

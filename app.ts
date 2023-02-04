@@ -1,8 +1,7 @@
-let message: string= "Hello, World"
-console.log(message);
+import http from 'http';
 
-function compute(a:number, b:number) {
-    return a*b;
-}
-
-console.log(compute(23,34));
+http
+    .createServer((req,res)=>{
+        res.end("hello, Ankit , What's up!")
+    })
+    .listen(5002,()=> console.log("listening to 5001."))
